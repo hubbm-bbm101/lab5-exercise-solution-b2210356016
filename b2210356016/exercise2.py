@@ -1,11 +1,9 @@
 def valid_email_check(email):
-    if "@" in email :      
-        if "." in email :
-            return True
-        else:
-            return False
+    if "@" and "." in email:
+        return True
     else:
         return False
+    
         
 x=input("Enter an email:")
 while not valid_email_check(x):
